@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E43D8437-0F6C-4539-BEF7-D85144D1F416}</ProjectGuid>
+    <ProjectGuid>{D7AF348D-7F07-45D0-9CE6-4A9288F4591A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CalculatingAverages</RootNamespace>
-    <AssemblyName>CalculatingAverages</AssemblyName>
+    <RootNamespace>AverageOfSpecificNumberOfScores</RootNamespace>
+    <AssemblyName>AverageOfSpecificNumberOfScores</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SumOfNumbers.cs" />
+    <Compile Include="AverageOfSpecificNumberOfScores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
