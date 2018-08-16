@@ -89,7 +89,7 @@ namespace AverageOfNonSpecificNumberOfScores
                 letterGrade = "F";
             }
 
-            Console.WriteLine($"The average of the scores entered is {average} and the average letter grade is {letterGrade}")
+            Console.WriteLine($"The average of the scores entered is {average} and the average letter grade is {letterGrade}");
         }
         public static string getInput()
         {
