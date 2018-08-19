@@ -13,6 +13,8 @@ namespace AverageOfNonSpecificNumberOfScores
             string input;
             string letterGrade;
             bool end=false;
+            int numberInput;
+            bool badInput=false;
             List<int> numbers = new List<int>();
             Console.WriteLine("This program allows you to enter as many test scores as you want. When you want to stop entering test scores, please" +
                 "enter \"q\".");
@@ -20,23 +22,31 @@ namespace AverageOfNonSpecificNumberOfScores
             {
                 try
                 {
+                    badInput = false;
                     Console.WriteLine("Please enter a test score: ");
                     input = getInput();
                     if (input.ToLower() == ("q"))
                     {
                         end = true;
+                        break;
+                    }
+                    numberInput = int.Parse(input);
+                    if(numberInput<0 || numberInput>100)
+                    {
+                        badInput = true;
                     }
                     else
                     {
                         numbers.Add(int.Parse(input));
                         end = false;
+                        badInput = false;
                     }
                 } catch (FormatException e)
                 {
                     Console.WriteLine("You did not enter a valid test score or \"q\".");
                     end = false;
                 }
-            } while (end !=true);
+            } while (!end || badInput == true);
 
             var sum = getSum(numbers);
             var average = sum / numbers.Count;
